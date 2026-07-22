@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8082:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
