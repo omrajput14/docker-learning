@@ -1,15 +1,21 @@
 # Docker Learning
 
-This is a basic repository to start learning Docker. It contains a simple HTML file served by an Nginx web server.
+A progressive repository for learning Docker fundamentals across multiple languages, architectures, and orchestration techniques.
 
-## How to run
+## Modules
 
-1. Build the Docker image:
-   ```bash
-   docker build -t basic-docker-app .
-   ```
-2. Run the Docker container:
-   ```bash
-   docker run -d -p 8080:80 basic-docker-app
-   ```
-3. Open your browser and navigate to `http://localhost:8080`.
+### Basic & Language Examples
+- **Root Nginx App**: Simple static HTML served by Nginx.
+- **`node-basic`**: Simple Node.js web server container.
+- **`python-basic`**: Simple Python Flask application container.
+- **`go-basic`**: Standalone Go web application container.
+- **`php-basic`**: PHP application served with Apache container.
+- **`static-nginx-custom`**: Nginx web server with custom configuration.
+- **`multi-stage-build`**: Go multi-stage Docker build example.
+- **`docker-compose-basic`**: Basic Docker Compose setup.
+
+### Java Docker Modules
+- **`java-basic`**: Standalone Java HTTP web server compiled and executed in Docker (`eclipse-temurin:21-jdk-alpine`).
+- **`java-maven`**: Building and packaging Java applications with Apache Maven inside Docker.
+- **`java-multi-stage`**: Multi-stage Java Docker build (Maven JDK build stage -> lightweight JRE runtime stage).
+- **`java-docker-compose`**: Multi-container orchestration with Java web service and a PostgreSQL database container.
